@@ -1,0 +1,13 @@
+Testing the virtual banking website https://demo.guru99.com/V1/html/Managerhomepage.php consists in verifying the quality of this application. There are 4 versions of this software, we check each version to analyze the correctness of the errors being fixed.
+
+Test report will be presented descriptively.
+
+A series of exploratory tests were carried out.
+
+
+Initial conditions for testing demo.guru99.com website in any version:
+
+-We need access to a web browser.
+-We need internet access.
+
+-The first test is to check the correctness of user registration, but for the next tests, we also need a user account created on the site "https://demo.guru99.com" for further work.
