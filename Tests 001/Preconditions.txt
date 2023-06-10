@@ -10,4 +10,6 @@ Initial conditions for testing demo.guru99.com website in any version:
 -We need access to a web browser.
 -We need internet access.
 
--The first test is to check the correctness of user registration, but for the next tests, we also need a user account created on the site "https://demo.guru99.com" for further work.
+-The first test is to check the correctness of user registration, but for the next tests, we also need a user account created on the site "https://demo.guru99.com/V1/index.php" for further work.
+
+-Follow the instructions on the page to set up an account. You can set up an account for any data and each time the login and password will be generated individually.
