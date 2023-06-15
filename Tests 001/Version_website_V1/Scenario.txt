@@ -1,0 +1,92 @@
+Scenariusz nr 1: "Rejestracja konta w aplikacji"
+
+Przypadek testowy 1.1: Użytkownik zakłada konto w aplikacji.
+Kroki testowe: 
+1. Otworzenie aplikacji webowej //np Chrome
+2. Otworzenie strony https://demo.guru99.com/V1/index.php
+3. Na dole strony jest opis - postępuj zgodnie z instrukcjami:
+3a. Kliknij przycisk "here"
+3b. Wpisz adres email // dowolny, może być nie prawdziwy
+3c. Zrób screen wygenerowanych danych
+3d. Przez 20 dni loguj się tymi danymi do aplikacji
+
+Oczekiwany rezultat:
+Poprawnie wygenerowane konto
+
+
+
+Scenariusz nr 2: "logowanie do aplikacji"
+
+Przypadek testowy 2.1:
+Warunki wstępne: Posiadanie aktywnego konta.
+Kroki testowe:
+1. Otworzenie aplikacji webowej // np Chrome
+2. Otworzenie strony https://demo.guru99.com/V1/index.php
+3. Wpisanie prawidłowego UserID i nieprawidłowego Password.
+4. Kliknij przycisk Login
+Oczekiwany rezultat:
+Wyświetlenie komunikatu o błędnym logowaniu, a następnie automatyczne odświeżenie strony.
+
+Przypadek testowy 2.2:
+Warunki wstępne: Posiadanie aktywnego konta.
+Kroki testowe:
+1. Otworzenie aplikacji webowej // np Chrome
+2. Otworzenie strony https://demo.guru99.com/V1/index.php
+3. Wpisanie nieprawidłowego UserID i prawidłowego Password.
+4. Kliknij przycisk Login
+Oczekiwany rezultat:
+Wyświetlenie komunikatu o błędnym logowaniu, a następnie automatyczne odświeżenie strony.
+
+Przypadek testowy 2.3:
+Warunki wstępne: Posiadanie aktywnego konta.
+Kroki testowe:
+1. Otworzenie aplikacji webowej // np Chrome
+2. Otworzenie strony https://demo.guru99.com/V1/index.php
+3. Wpisz nieprawidłowe UserID oraz nieprawidłowe Password
+4. Kliknij przycisk Login
+Oczekiwany rezultat:
+Wyświetlenie komunikatu o błędnym logowaniu, a następnie automatyczne odświeżenie strony.
+
+Przypadek testowy 2.4:
+Warunki wstępne: Posiadanie aktywnego konta.
+Kroki testowe:
+1. Otworzenie aplikacji webowej // np Chrome
+2. Otworzenie strony https://demo.guru99.com/V1/index.php
+3. Wpisz poprawne UserID oraz poprawne Password
+4. Kliknij przycisk Login
+Oczekiwany rezultat:
+Poprawne zalogowanie do aplikacji.
+
+
+Scenariusz nr 3: "Założenie nowego konta klienta // New Customer"
+
+Przypadek testowy 3.1:
+Warunki wstępne zalogowanie do aktywnego konta.
+Kroki testowe:
+1. Kliknij przycisk "New Customer"
+2. Wpisz dowolną "Customer Name" - np JKowalski
+3. Zaznacz opcje "Gender" //male lub female
+4. Zaznacz "Date of Birth" - prawidłowe, np 10.06.2000
+5. Wpisz adres w pole "Address" - np. Cieplinskiego 12/21
+6. Wpisz nazwe miasta w  pole "City" - dowolna nazwa, np Rzeszow
+7. Wpisz państwo w pole "State" - np Podkarpackie
+8. Wpisz numer pin w pole "PIN" - np 123456
+9. Wpisz numer telefonu w pole "Telephone Number" - dowolny prawidłowy numer telefonu - np 600600600
+10. Wpisz adres email w pole "E-mail" - np. testowy@email.com
+11. Kliknij przycisk "Submit" 
+Oczekiwany rezultat:
+Wyświetlenie komunikatu:
+"Connection failed: Access denied for user 'root'@'localhost' (using password: NO)"
+
+Testujemy każdą z funkcjonalności na poprawność wpisywanych danych:
+
+Przypadek 3.1.1:
+Wciśnięcie przycisku "New Customer" powoduje przejście do strony tworzenia nowego konta klienta
+Przypadek 3.1.2.1:
+Możliwość wpisania jedynie liter bez zmiękczeń. 
+Przypadek 3.1.2.2:
+Po wpisaniu cyfr, zmiękczeń (np ą,ć,ę,ń,ó) oraz znaków interpukcyjnych pojawia się informacja: "Numbers are not allowed" 
+Przypadek 3.1.2.3:
+Po wpisaniu znaków specjalnych pojawia się napis: "Special characters are not allowed"
+
+Przypadek 3.
